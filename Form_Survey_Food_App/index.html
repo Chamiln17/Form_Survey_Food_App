@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Food Delivery App Survey</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <div class="container">
+      <header>
+        <h1 id="title">Food Delivery App Survey</h1>
+        <p id="description">Together For a better service and better food</p>
+      </header>
+      <form id="survey-form">
+        <div class="form-group">
+          <label for="name" id="name-label"
+            >Name<input
+              type="text"
+              name="name"
+              required
+              id="name"
+              placeholder="Enter Your Name"
+          /></label>
+        </div>
+        <div class="form-group">
+          <label for="email" id="email-label"
+            >Email<input
+              type="email"
+              name="email"
+              required
+              id="email"
+              placeholder="Enter Your Email"
+          /></label>
+        </div>
+        <div class="form-group">
+          <label for="age" id="number-label"
+            >Age (optional)<input
+              type="number"
+              name="age"
+              id="age"
+              min="13"
+              max="110"
+              placeholder="Enter Your Age"
+          /></label>
+        </div>
+        <div class="form-group">
+          <label for="dropdown"
+            >Which option best describes your current role?
+            <select id="dropdown" name="dropdown">
+              <option value="">Select One Option</option>
+              <option value="part-time">Part Time</option>
+              <option value="full-time-job">Full Time Job</option>
+              <option value="student">Student</option>
+              <option value="self-learner">Self Learner</option>
+              <option value="other">Other</option>
+            </select>
+          </label>
+        </div>
+        <div class="form-group">
+          <p>Would You Recommend Our App?</p>
+          <div class="label">
+            <label for="definitely" class="radio-label"
+              ><input
+                type="radio"
+                name="recommendation"
+                id="definitely"
+                checked
+              />Definitely</label
+            ></div>
+            <div class="label">
+            <label for="maybe" class="radio-label"
+              ><input
+                type="radio"
+                name="recommendation"
+                id="maybe"
+              />Maybe</label
+            >
+        </div>
+            <div class="label">
+            <label for="not-sure" class="radio-label"
+              ><input type="radio" name="recommendation" id="not-sure" />Not
+              Sure</label
+            >
+            </div>
+        </div>
+        <div class="form-group">
+          <p>What would you like to see improved? (Check all that apply)</p>
+        <div class="label">
+          <label for="user-interface" class="radio-label"
+            ><input
+              type="checkbox"
+              id="user-interface"
+              value="user-interface"
+            />User Interface</label
+          >
+        </div>
+        <div class="label">
+          <label for="delivery-tracking" class="radio-label"
+            ><input
+              type="checkbox"
+              id="delivery-tracking"
+              value="delivery-tracking"
+            />Delivery Tracking</label
+          >
+        </div>
+          <div class="label">
+          <label for="customer-support" class="radio-label"
+            ><input
+              type="checkbox"
+              id="customer-support"
+              value="customer-support"
+            />Customer Support</label
+          ></div>
+          <div class="label">
+          <label for="payment-options" class="radio-label"
+            ><input
+              type="checkbox"
+              id="payment-options"
+              value="payment-options"
+              name="payment_options"
+            />Payment Options</label
+          ></div>
+        </div>
+        <div class="form-group">
+          <label for="comments"
+            >Any Comments?<textarea id="comments" name="comments"></textarea>
+          </label>
+        </div>
+        <div class="form-group">
+          <button type="submit" value="Submit" class="submit-button">Submit</button>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
